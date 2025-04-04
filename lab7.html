@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Оформлення вебсторінки з допомогою таблиці стилів CSS</title>
+    <link rel="stylesheet" href="lab7.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+        .base{
+            font: 70px 'Times New Roman', serif;
+            color: red;
+            text-shadow: 5px 4px #dbdbdb;
+            margin-top: -60px;
+        }
+        .shar1{
+            font: bold 50px Arial, sans-serif;
+            color: black;
+            text-shadow: -10px -7px 5px #dbdbdb;
+        }
+        #shar2{
+            font: 35px Arial, sans-serif;
+            margin-top: 10px;
+            text-shadow: 10px 10px #dbdbdb, 10px -10px gray;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Цей абзац оформлено відповідно до таблиці стилів з файлу lab7.css
+        розмір шрифту 19 пунктів, зелений колір тексту, шрифт Comic Sans MS і відступ першого рядка абзаців зліва на 65 пікселів
+    </p>
+    <center>
+        <div class="base">
+            Текст із тінню
+        </div>
+        <div class="shar1">
+            Приклад
+        </div>
+        <div id="shar2">
+            Приклад використання каскадних стилів
+        </div>
+    </center>
+    <p style="text-decoration: underline; text-align: justify;">
+        Повій, вітре, до схід <span style="color: rgb(171,205,9);">сонця</span>, до схід сонця, край віконця
+    </p>
+</body>
+</html>
