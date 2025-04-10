@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Використання ефектів CSS</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+            background-image: url("graphics/text_br.jpg");
+            background-attachment: fixed;
+            background-size: 100%;
+        }
+        .task5{
+            text-align: justify;
+            color: green;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2em;
+            width: 300px;
+            height: 200px;
+            position: relative;
+            left: 150px;
+            word-wrap: break-word;
+            overflow: scroll;
+            border: 5px solid black;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+        .task5::first-letter{
+            font-size: 2em;
+        }
+        .task5:hover{
+            font-family:Arial, Helvetica, sans-serif;
+            color: red;
+        }
+        ol li{
+            list-style-type: upper-roman;
+            font-style: italic;
+            color: blue;
+        }
+        ul li{
+            list-style-type: circle;
+            font-style: bold;
+            color: #ab3456;
+            padding-left: 5px;
+            margin-left: -20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Використання ефектів CSS</h1>
+    <p class="task5">
+        Loremipsumdolorsitametconsecteturadipiscingelit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" 
+    </p>
+
+    <ol>
+        <li>India</li>
+        <li>China</li>
+        <li>Taiwan</li>
+        <li>Vietnam</li>
+        <li>Mongolia</li>
+        <li>Japan</li>
+        <li>North Korea</li>
+        <li>South Korea</li>
+        <li>Singapore</li>
+        <li>Israel</li>
+    </ol>
+    <ul>
+        <li>Анна</li>
+        <li>Ірина</li>
+        <li>Олена</li>
+        <li>Катерина</li>
+        <li>Оксана</li>
+    </ul>
+
+    <!-- <p>
+        Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.
+        Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig sausage prosciutto chicken spare ribs salami picanha doner. Kevin capicola sausage, buffalo bresaola venison turkey shoulder picanha ham pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage. Ground round jerky brisket pastrami shank.
+    </p> -->
+</body>
+</html>
