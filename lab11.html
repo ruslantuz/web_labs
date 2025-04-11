@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Оформлення таблиці засобами CSS</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        h1{
+            text-align: center;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        table{
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        table, .tab-header{
+            border: 5px solid blue;
+        }
+        th{
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        tr > *:first-child{
+            width: 200px;
+            background-color: yellow;
+            border-right: 3px solid green;
+        }
+        tr > *:last-child{
+            width: 120px;
+            text-align: center;
+            background-color: rgb(128,255,250);
+        }
+        tr{
+            border-bottom: 2px dashed green;
+        }
+        th, td{
+            padding-left: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Оформлення таблиці засобами CSS</h1>
+
+    <table>
+        <caption>Населення міст</caption>
+        <tr class="tab-header">
+            <th>Місто</th>
+            <th>Населення, тис. чол.</th>
+        </tr>
+        <tr>
+            <td>Лондон</td>
+            <td>9787</td>
+        </tr>
+        <tr>
+            <td>Манчестер</td>
+            <td>2553</td>
+        </tr>
+        <tr>
+            <td>Бірмінгем</td>
+            <td>2440</td>
+        </tr>
+        <tr>
+            <td>Лідс</td>
+            <td>1777</td>
+        </tr>
+        <tr>
+            <td>Глазго</td>
+            <td>1199</td>
+        </tr>
+        <tr>
+            <td>Шеффілд</td>
+            <td>685</td>
+        </tr>
+        <tr>
+            <td>Ноттінгем</td>
+            <td>729</td>
+        </tr>
+        <tr>
+            <td>Ковентрі</td>
+            <td>359</td>
+        </tr>
+        <tr>
+            <td>Единбург</td>
+            <td>488</td>
+        </tr>
+        <tr>
+            <td>Белфаст</td>
+            <td>483</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
