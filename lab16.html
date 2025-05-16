@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Площа трикутника</title>
+
+    <style>
+        #result{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Площа трикутника</h1>
+    <p>
+        Введіть довжини основи і опущеної на неї висоти трикутника
+    </p>
+    <p>Основа:</p>
+    <input type="number" min="0.001" name="base" id="base" onchange="showResult()">
+    <p>Висота:</p>
+    <input type="number" min="0.001" name="height" id="height" onchange="showResult()">
+
+    <p id = "result">Площа трикутника: </p>
+
+
+    <script>
+        var result = document.getElementById("result");
+        var base = document.getElementById("base");
+        var height = document.getElementById("height");
+        
+
+        function showResult(){
+            result.style.display = "block";
+            if (base.value < base.min) base.value=base.min;
+            if (height.value < height.min) height.value=height.min;
+            result.innerHTML = "Площа трикутника = " + 1/2*base.value * height.value;
+        }
+    </script>
+</body>
+</html>

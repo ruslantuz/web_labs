@@ -19,10 +19,3 @@ function closeWindow(){
         window.close();
     }
 }
-
-// document.getElementById("closebtn").onclick = () => {
-//     if(confirm("Ви справді бажаєте закрити вікно?")){
-//         wind.close();
-//         return false;
-//     }
-// };

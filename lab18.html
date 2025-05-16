@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Обробка радіокнопок засобами JavaScript</title>
+    <style>
+        body{
+            background-color: #F8F8FF;
+        }
+        form p{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Обробка радіокнопок засобами JavaScript</h1>
+    <form name="form1">
+        <fieldset>
+            <legend>Обчислення</legend>
+
+            <p>Введіть значення радіуса: </p>
+            <input type="number" name="radius">
+            <br>
+            <input type="radio" name="calcOption" value="square"> Обчислити площу круга
+            <br>
+            <input type="radio" name="calcOption" value="length"> Обчислити довжину кола
+            <br>
+            <input type="radio" name="calcOption" value="volume"> Обчислити об'єм кулі
+            <br>
+            <input type="radio" name="calcOption" value="surface"> Обчислити площу поверхні сфери
+            <br>
+            <input type="button" value="Обчислити" id="calcBtn">
+            <br>
+            <input type="reset" value="Очистити" id="clearBtn">
+
+        </fieldset>
+    </form>
+    <p id="result"></p>
+    <script src="script18.js"></script>
+</body>
+</html>

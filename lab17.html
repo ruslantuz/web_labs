@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Робота з графічними зображеннями засобами JavaScript</title>
+
+    <style>
+        img{
+            width: 300px;
+        }
+        form p{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Робота з графічними зображеннями засобами JavaScript</h1>
+
+    <form name="form1">
+        <p>Для зміни параметрів першого зображення введіть значення одного або кількох параметрів і натисніть кнопку <b>Перегляд</b></p>
+        <br>
+        <p>Ширина: </p>
+        <input type="number" name="width" min="0" max="1000" step="1" onchange="setValue(this)">
+        <p>Висота: </p>
+        <input type="number" name="height" min="0" max="1000" step="1" onchange="setValue(this)">
+        <br>
+        <p>Товщина рамки: </p>
+        <input type="number" name="border_thickness" min="0" max="100" step="1" onchange="setValue(this)">
+        <p>Підказка: </p>
+        <input type="text" name="hint" onchange="setValue(this)">
+        <br>
+        <p>Перестановка зображень. Введіть номери зображень: </p>
+        <input type="number" name="swap_numbers" min="1" max="4" step="1">
+        <input type="number" name="swap_numbers" min="1" max="4" step="1">
+        <br>
+        <input type="button" value="Перегляд" id="viewBtn">
+        <input type="reset" value="Очистити" id="clearBtn">
+    </form>
+    <p>
+        <img src="graphics/win.png" alt="win" title="win">
+    </p>
+    <img src="graphics/tumbleweed.png">
+    <img src="graphics/opensuse1.png">
+    <img src="graphics/photo_2025-04-04_09-47-29.jpg">
+
+    <script src="script17.js">
+
+    </script>
+
+</body>
+</html>
