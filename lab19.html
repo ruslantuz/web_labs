@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета слухача курсів</title>
+    <style>
+        body{
+            background-color: rgb(200,250,255);
+        }
+        #costSum{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Анкета слухача курсів</h1>
+
+    <form name="form1">
+        <fieldset>
+            <legend>Які курси ви хочете прослухати</legend>
+            <input type="checkbox" name="courseOpt" value="1000" onclick="clickFunc()">Бази даних (90 годин, 1000 гривень)
+            <br>
+            <input type="checkbox" name="courseOpt" value="2000">Бази даних (180 годин, 2000 гривень)
+            <br>
+            <input type="checkbox" name="courseOpt" value="1200">Візуальне програмування (90 годин, 1200 гривень)
+            <br>
+            <input type="checkbox" name="courseOpt" value="1100">Динамічне програмування (90 годин, 1100 гривень)
+            <br>
+            <input type="checkbox" name="courseOpt" value="950">Моделі та методи прийняття рішень (90 годин, 950 гривень)
+            <br>
+            <input type="checkbox" name="courseOpt" value="2000">Системне програмування (180 гривень, 2000 гривень)
+        </fieldset>
+    </form>
+
+    <p id="costSum"></p>
+
+
+
+    <script src="script19.js"></script>
+</body>
+</html>
