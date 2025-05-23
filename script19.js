@@ -9,12 +9,13 @@ for(opt of options){
 function clickFunc(){
     var sumValue = 0;
     var selectedOptions = [];
-    options.forEach(elem => {
+
+    for (elem of options){
         if (elem.checked){
             sumValue += parseInt(elem.value);
             selectedOptions.push(elem.nextSibling.textContent);
         }
-    })
+    }
     sumElement.textContent = "Вартість вибраних курсів: " + sumValue + " грн";
     selectedOptsElement.innerHTML = "Вибрані курси: <br>";
 
@@ -22,5 +23,3 @@ function clickFunc(){
         selectedOptsElement.innerHTML += str + "<br>";
     }
 }
-
-
