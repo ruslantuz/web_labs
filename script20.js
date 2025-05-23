@@ -1,29 +1,24 @@
-const form = document.getElementById('courseForm');
-const totalCostElement = document.getElementById('totalCost');
+var canvas=document.getElementById("draw");
+var x=canvas.getContext("2d");
+// Прямокутник
+x.fillStyle = "rgb(170,255,180)";
+x.fillRect(10,10,480,280);
 
-form.addEventListener('change', handleCheckboxClick);
+// Трикутник
+x.beginPath();
+x.moveTo(100,20);
+x.lineTo(210,240);
+x.lineTo(30,160);
+x.closePath();
+x.lineWidth = 3;
+x.stroke();
 
-function handleCheckboxClick() {
-    const checkboxes = form.querySelectorAll('input[name="course"]');
-    let totalCost = 0;
-    let totalHours = 0;
-    let selectedCourses = [];
+x.moveTo(310,100);
+x.quadraticCurveTo(380,50,460,210);
+x.strokeStyle="red"; 
+x.setLineDash([5,5]);
+x.stroke();
 
-    checkboxes.forEach(checkbox => {
-        if (checkbox.checked) {
-            totalCost += parseFloat(checkbox.value); 
-            totalHours += parseFloat(checkbox.dataset.hours); 
-            const courseName = checkbox.parentElement.textContent.split('(')[0].trim();
-            selectedCourses.push(courseName);
-        }
-    });
-
-    totalCostElement.textContent = totalCost.toFixed(2); 
-    const totalHoursElement = document.getElementById('totalHours');
-    const selectedCoursesElement = document.getElementById('selectedCourses');
-
-    totalHoursElement.textContent = totalHours; 
-    selectedCoursesElement.textContent = selectedCourses.join(', ');
-}
-
-
+x.moveTo(460,210);
+x.bezierCurveTo(410,220,340,150, 250,210);
+x.stroke();
