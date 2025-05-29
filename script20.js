@@ -30,7 +30,7 @@ x.stroke();
 // Текст
 x.font='22px Impact';
 x.fillStyle='#65036c';
-x.fillText("Відображаємо текст",210,40); 
+x.fillText("Виконав",210,40); 
 
 // Геолокація
 var lat = document.getElementById("latitude");
